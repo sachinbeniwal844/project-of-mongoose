@@ -33,5 +33,5 @@ mongoose
   .then(() => console.log("mongoose is connected.........."))
   .catch((error) => console.log(error.message));
 
-const port = process.env.PORT ;
-app.listen(port, () => console.log(`Server is running on the port of ${port}`));
+const port = process.env.PORT || 3001;
+app.listen(port, "0.0.0.0",() => console.log(`Server is running on the port of ${port}`));
